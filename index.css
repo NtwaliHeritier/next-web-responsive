@@ -167,6 +167,7 @@ nav a {
   margin-top: 1%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 200px;
   flex-direction: column;
   justify-content: flex-end;
