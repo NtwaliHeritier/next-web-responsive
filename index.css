@@ -6,12 +6,24 @@
 
 body {
   font-family: "ARS Maquette", Helvetica "Neue", Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+}
+
+.alignment {
+  width: 90%;
+  margin: 0 auto;
 }
 
 a {
@@ -74,6 +86,7 @@ nav a {
   padding: 5px;
 }
 
+/* section1 styles */
 .section1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -88,13 +101,17 @@ nav a {
 
 .sectionflex {
   display: flex;
-
 }
 
 .bigimg {
   position: relative;
   height: 100%;
-  background: linear-gradient(165deg, rgb(248, 7, 7) 25%, rgba(45, 43, 43, 1) 60%, rgba(0, 0, 0, 1) 97%);
+  background: linear-gradient(
+    165deg,
+    rgb(248, 7, 7) 25%,
+    rgba(45, 43, 43, 1) 60%,
+    rgba(0, 0, 0, 1) 97%
+  );
   flex-direction: column;
   justify-content: space-between;
   z-index: 2;
@@ -134,9 +151,7 @@ nav a {
   font-size: 40px;
   color: white;
   width: 40%;
-
 }
-
 
 .righttop {
   background: url(images/img2.jpg);
@@ -176,4 +191,23 @@ nav a {
   color: white;
   font-size: 15px;
   padding: 0.5%;
+}
+
+/* section2 styles */
+
+.title {
+  color: #ff4422;
+  font-size: 20px;
+}
+
+.title h1 {
+  display: inline-block;
+}
+
+.grid-divs img {
+  width: 100%;
+}
+
+.grid-divs div {
+  margin-bottom: 5%;
 }
