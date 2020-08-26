@@ -36,7 +36,7 @@ body {
 }
 
 .alignment {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -351,4 +351,19 @@ nav a {
 
 .section4 li a {
   color: rgb(116, 110, 110);
+}
+
+/* Section5 style */
+
+.section5 {
+  margin: 7% auto;
+}
+
+.section5 p a {
+  font-size: 20px;
+}
+
+.second-p .strikethrough {
+  text-decoration: line-through;
+  font-size: 15px;
 }
