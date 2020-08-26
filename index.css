@@ -440,16 +440,20 @@ nav a {
 
 /* tablets */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* phones */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media screen and (max-width: 600px) {
   * {
     border: 1px solid #f00 !important;
   }
 
+  main {
+    margin: 0;
+    padding: 0;
+  }
   body {
     overflow-x: hidden;
     width: 100vw;
@@ -488,7 +492,6 @@ nav a {
     display: block;
     padding: 0;
     margin: 2% auto;
-    width: 70%;
   }
 
   .nav-img {
@@ -500,7 +503,6 @@ nav a {
   }
 
   footer {
-    width: 70%;
     margin: 0 auto;
   }
 }
