@@ -58,7 +58,8 @@ header {
   background-color: black;
 }
 
-nav a {
+nav a,
+.left-navbar a {
   color: #b6b6b6;
   padding: 10px;
 }
@@ -440,7 +441,62 @@ nav a {
 
 /* tablets */
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-device-width: 1024px) {
+  .right-nav img,
+  .right-nav button {
+    display: none;
+  }
+
+  .alignment {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .title {
+    margin-top: 5%;
+  }
+  .block {
+    display: block;
+  }
+
+  #div5 {
+    margin-bottom: 2%;
+  }
+
+  #TNW {
+    display: flex;
+    width: 100%;
+  }
+
+  #TNW p {
+    margin-left: 30%;
+  }
+
+  .smallimg a {
+    font-size: 20px;
+  }
+
+  .majordiv h1,
+  .div1 p {
+    font-size: 20px;
+  }
+
+  .majordiv .grey {
+    font-size: 12px;
+  }
+
+  .div2 .lastp {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  ul li {
+    font-size: 10px;
+  }
+
+  .div2 a {
+    color: black;
+  }
 }
 
 /* phones */
