@@ -445,18 +445,14 @@ nav a {
 
 /* phones */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  * {
-    border: 1px solid #f00 !important;
-  }
-
+@media screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
   }
 
   .alignment {
-    width: 100%;
+    margin: 0 auto;
   }
 
   .flex,
@@ -487,8 +483,6 @@ nav a {
   .section4 {
     display: block;
     padding: 0;
-    margin: 2% auto;
-    width: 70%;
   }
 
   .nav-img {
@@ -499,8 +493,21 @@ nav a {
     display: none;
   }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
   footer {
-    width: 70%;
     margin: 0 auto;
+    position: relative;
+  }
+
+  .ftr2 div {
+    border-radius: 0;
+    width: 8%;
+    position: absolute;
+    bottom: 0;
+    right: 0.5%;
   }
 }
