@@ -29,6 +29,12 @@ body {
   gap: 1%;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+}
+
 .alignment {
   width: 90%;
   margin: 0 auto;
@@ -251,7 +257,6 @@ nav a {
 
 .majordiv {
   position: relative;
-  padding-bottom: 20%;
 }
 
 .majordiv h1 {
@@ -275,7 +280,7 @@ nav a {
 .div2 {
   background-color: #fffaf8;
   text-indent: 10%;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
 }
 
 .img img {
@@ -293,4 +298,57 @@ nav a {
 .lastp {
   text-indent: 10%;
   padding-bottom: 5%;
+}
+
+/* section4 styles */
+
+.section4 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.grid-background {
+  height: 20rem;
+  background-image: url(./images/apple.png);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2%;
+  color: white;
+}
+
+.grid-flex {
+  background-color: #ffebe8;
+  padding-left: 2%;
+  margin-top: 1%;
+}
+
+.grid-flex img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-img {
+  width: 50%;
+}
+
+.grid-flex {
+  justify-content: space-between;
+}
+
+.section4 li {
+  border-bottom: 1px solid lightgray;
+  padding: 2% 0 2%;
+  list-style: none;
+}
+
+.section4 li::before {
+  content: "\2022";
+  color: #ff4422;
+  font-weight: bolder;
+}
+
+.section4 li a {
+  color: rgb(116, 110, 110);
 }
