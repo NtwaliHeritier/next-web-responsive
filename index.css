@@ -199,16 +199,42 @@ nav a {
 .title {
   color: #ff4422;
   font-size: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .title h1 {
   display: inline-block;
 }
 
+.grid-divs {
+  grid-row-gap: 3%;
+}
+
 .grid-divs img {
   width: 100%;
+  cursor: pointer;
 }
 
 .grid-divs div {
   margin-bottom: 5%;
+}
+
+.grid-divs a {
+  color: black;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.grid-divs a:hover {
+  color: #ff4422;
+}
+
+.second-p {
+  padding: 2%;
+}
+
+.second-p,
+.second-p a {
+  color: #b6b6b6;
 }
