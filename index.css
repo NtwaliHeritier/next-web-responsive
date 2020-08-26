@@ -367,3 +367,32 @@ nav a {
   text-decoration: line-through;
   font-size: 15px;
 }
+
+/* Footer Styles */
+
+.ftr1 {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #131313;
+  height: 170px;
+}
+
+.links {
+  margin-bottom: 2%;
+}
+
+.links a {
+  padding: 1.5%;
+}
+
+.links i,
+.links2 a {
+  color: white;
+}
+
+.links2 a {
+  padding: 1%;
+  font-size: 12px;
+  color: lightgrey;
+}
