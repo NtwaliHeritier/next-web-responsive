@@ -9,6 +9,14 @@ body {
   overflow-x: hidden;
 }
 
+.red {
+  color: #ff4422;
+}
+
+.grey {
+  color: #b6b6b6;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -231,10 +239,58 @@ nav a {
 }
 
 .second-p {
-  padding: 2%;
+  padding: 2% 0;
 }
 
 .second-p,
 .second-p a {
   color: #b6b6b6;
+}
+
+/* Section 3 div design */
+
+.majordiv {
+  position: relative;
+  padding-bottom: 20%;
+}
+
+.majordiv h1 {
+  text-align: center;
+  background-color: #ff4422;
+  color: white;
+  padding: 1%;
+}
+.div1 {
+  background-color: #ffebe8;
+  text-indent: 40%;
+  padding: 3%;
+}
+
+.div1 p:nth-child(1) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.div2 {
+  background-color: #fffaf8;
+  text-indent: 10%;
+  padding-bottom: 20%;
+}
+
+.img img {
+  position: absolute;
+  width: 20%;
+  height: 15%;
+  top: 3%;
+  left: 5%;
+}
+
+.div2 p {
+  padding: 2%;
+}
+
+.lastp {
+  text-indent: 10%;
+  padding-bottom: 5%;
 }
