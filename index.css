@@ -440,12 +440,16 @@ nav a {
 
 /* tablets */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* phones */
 
 @media screen and (max-width: 600px) {
+  main {
+    margin: 0;
+    padding: 0;
+  }
   body {
     overflow-x: hidden;
     width: 100%;
