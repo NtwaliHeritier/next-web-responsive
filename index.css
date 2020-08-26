@@ -297,8 +297,7 @@ nav a,
 
 .div2 {
   background-color: #fffaf8;
-  text-indent: 10%;
-  padding-bottom: 10%;
+  padding: 0 5% 10% 5%;
 }
 
 .img img {
@@ -314,7 +313,6 @@ nav a,
 }
 
 .lastp {
-  text-indent: 10%;
   padding-bottom: 5%;
 }
 
