@@ -6,8 +6,8 @@
 
 body {
   font-family: "ARS Maquette", Helvetica "Neue", Arial, sans-serif;
-  overflow-x: hidden;
-  position: relative;
+  /* overflow-x: hidden;
+  position: relative; */
 }
 
 .red {
@@ -49,6 +49,7 @@ a {
 
 header {
   width: 100vw;
+  z-index: 1000;
 }
 
 .nav {
@@ -72,6 +73,11 @@ nav a {
 
 .navbar {
   padding: 0.5% 1%;
+  background-color: white;
+}
+
+.nav-img {
+  display: none;
 }
 
 .navbar i,
@@ -108,6 +114,7 @@ nav a {
 .sticky {
   position: sticky;
   top: 0;
+  left: 0;
 }
 
 /* section1 styles */
@@ -427,4 +434,73 @@ nav a {
 
 .ftr2 p {
   text-align: center;
+}
+
+/* media queries */
+
+/* tablets */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* phones */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  * {
+    border: 1px solid #f00 !important;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  .alignment {
+    width: 100%;
+  }
+
+  .flex,
+  .grid,
+  .grid2 {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .left-navbar {
+    display: none;
+  }
+
+  .right-nav img,
+  .right-nav button {
+    display: none;
+  }
+
+  .navbar,
+  .announcement,
+  .section1,
+  .grid-divs,
+  .section3,
+  .title,
+  .section4 {
+    display: block;
+    padding: 0;
+    margin: 2% auto;
+    width: 70%;
+  }
+
+  .nav-img {
+    display: inline-block;
+  }
+
+  .bigimgtop div {
+    display: none;
+  }
+
+  footer {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
