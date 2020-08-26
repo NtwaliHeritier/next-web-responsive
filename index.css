@@ -7,6 +7,7 @@
 body {
   font-family: "ARS Maquette", Helvetica "Neue", Arial, sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 .red {
@@ -65,6 +66,10 @@ nav a {
   color: white;
 }
 
+.right-nav {
+  margin-right: 2%;
+}
+
 .navbar {
   padding: 0.5% 1%;
 }
@@ -98,6 +103,11 @@ nav a {
   margin-left: 1%;
   color: black;
   padding: 5px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 /* section1 styles */
@@ -395,4 +405,26 @@ nav a {
   padding: 1%;
   font-size: 12px;
   color: lightgrey;
+}
+
+.ftr2 {
+  color: white;
+  background-color: black;
+  padding: 4%;
+}
+
+.ftr2 div {
+  background-color: #146ff8;
+  float: right;
+  padding: 2%;
+  border-radius: 50%;
+  margin-top: -4%;
+}
+
+.ftr2 a {
+  color: white;
+}
+
+.ftr2 p {
+  text-align: center;
 }
