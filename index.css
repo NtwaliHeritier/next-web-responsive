@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+}
+
 .sectionflex {
   display: flex;
 }
@@ -209,10 +213,15 @@ body {
 .section1,
 .grid-divs,
 .section3,
-.title,
 .section4 {
   display: block;
   padding: 0;
+}
+
+.grid-divs a {
+  color: black;
+  font-size: 15px;
+  font-weight: 900;
 }
 
 .nav-img {
@@ -223,9 +232,109 @@ body {
   display: none;
 }
 
+.second a {
+  font-weight: lighter;
+}
+
+.second-p,
+.second-p a {
+  color: #b6b6b6;
+  font-size: 12px;
+  padding-top: 2%;
+}
+
+.mobile {
+  margin: 0 auto 4%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
+}
+
+.majordiv {
+  position: relative;
+}
+
+.img img {
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  top: 4%;
+  left: 5%;
+}
+
+.div1 {
+  background-color: #ffebe8;
+  text-indent: 40%;
+  padding: 3%;
+}
+
+.majordiv h1,
+.div1 p {
+  font-size: 20px;
+}
+
+.div1 p:nth-child(1) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.majordiv .grey {
+  font-size: 12px;
+}
+
+.majordiv h1 {
+  text-indent: 25%;
+  background-color: #f42;
+  color: white;
+  padding: 1%;
+}
+
+.div1 p{
+  text-indent: 25%;
+}
+
+.title {
+  color: #f42;
+  font-size: 20px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+li {
+  padding: 1%;
+}
+
+li a {
+  font-size: 15px;
+}
+
+.div2 .lastp {
+  font-size: 14px;
+  text-align: left;
+}
+
+.lastp {
+  padding-bottom: 5%;
+}
+
+.div2 {
+  padding: 20px;
+}
+
+.div2 a {
+  color: black;
+}
+
+.div2 p {
+  padding: 1%;
+  font-size: 14px;
+}
+
+.hr {
+  margin: 3% 0 3%;
 }
 
 footer {
@@ -254,6 +363,11 @@ footer {
 
 .title h1 {
   font-size: 25px;
+  display: inline-block;
+}
+
+#div5 h1 {
+  display: block;
 }
 
 .inline-block {
@@ -265,8 +379,8 @@ footer {
 }
 
 .mobile img {
-  width: 25%;
-  height: 45%;
+  width: 15%;
+  height: 55px;
 }
 
 .second {
@@ -489,13 +603,6 @@ footer {
   }
 
   /* section2 styles */
-
-  .title {
-    color: #f42;
-    font-size: 20px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
 
   .title h1 {
     display: inline-block;
