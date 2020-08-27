@@ -6,6 +6,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .red {
@@ -184,13 +185,13 @@ nav a,
 .bigimg {
   position: relative;
   height: 100%;
-  background: 
-  linear-gradient(
-    165deg,
-    rgb(248, 7, 7) 25%,
-    rgba(45, 43, 43, 1) 60%,
-    rgba(0, 0, 0, 1) 97%
-  );
+  background:
+    linear-gradient(
+      165deg,
+      rgb(248, 7, 7) 25%,
+      rgba(45, 43, 43, 1) 60%,
+      rgba(0, 0, 0, 1) 97%
+    );
   flex-direction: column;
   justify-content: space-between;
   z-index: 2;
@@ -317,6 +318,10 @@ nav a,
   background-color: #ffebe8;
   text-indent: 40%;
   padding: 3%;
+}
+
+.div2 a {
+  color: black;
 }
 
 .div2 p {
