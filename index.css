@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.sectionflex {
+  display: flex;
+}
+
 .red {
   color: #f42;
 }
@@ -44,110 +48,229 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-  main {
-    margin: 0;
-    padding: 0;
-  }
+/* Phone Design */
 
-  body {
-    overflow-x: hidden;
-    width: 100%;
-  }
+main {
+  margin: 0;
+  padding: 0;
+}
 
-  .alignment {
-    margin: 0 auto;
-  }
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
-  .flex,
-  .grid,
-  .grid2 {
-    display: block;
-  }
+.alignment {
+  margin: 0 auto;
+}
 
-  .nav,
-  #TNW {
-    display: none;
-  }
+.flex,
+.grid,
+.grid2 {
+  display: block;
+}
 
-  .left-navbar {
-    display: none;
-  }
+#hamburger {
+  color: #f42;
+}
 
-  .right-nav img,
-  .right-nav button {
-    display: none;
-  }
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .navbar,
-  .announcement,
-  .section1,
-  .grid-divs,
-  .section3,
-  .title,
-  .section4 {
-    display: block;
-    padding: 0;
-  }
+.search1 {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
 
-  .nav-img {
-    display: inline-block;
-    margin-top: 1%;
-  }
+.search {
+  padding: 10px 15px;
+}
 
-  .bigimgtop div {
-    display: none;
-  }
+.announcement {
+  background-color: #fd3;
+  margin-top: -1%;
+}
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
+.announcement a {
+  display: inline-block;
+  color: black;
+  padding: 3%;
+  font-size: 14px;
+  text-align: center;
+}
 
-  footer {
-    margin: 0 auto;
-    position: relative;
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(images/img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
 
-  .ftr2 div {
-    border-radius: 0;
-    width: 8%;
-    position: absolute;
-    bottom: 0;
-    right: 0.5%;
-  }
+.bigimg {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(
+    165deg,
+    rgb(248, 7, 7) 25%,
+    rgba(45, 43, 43, 1) 60%,
+    rgba(0, 0, 0, 1) 97%
+  );
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
 
-  .link a {
-    font-size: 20px;
-  }
+.link {
+  padding: 2%;
+}
 
-  .bigimg,
-  .righttop,
-  .rightbottom {
-    height: 25vh;
-    margin: 1%;
-  }
+.link a {
+  font-size: 40px;
+  color: white;
+  width: 40%;
+}
 
-  .title h1 {
-    font-size: 25px;
-  }
+.link p,
+.link i,
+.details {
+  font-size: 15px;
+  color: grey;
+  padding: 0.5%;
+}
 
-  .inline-block {
-    display: inline-block;
-  }
+.details {
+  color: white;
+}
 
-  .mobile {
-    display: flex;
-  }
+.nav-img img {
+  height: 40px;
+}
 
-  .mobile img {
-    width: 25%;
-    height: 45%;
-  }
+.white p,
+.smallimg i {
+  color: white;
+  font-size: 15px;
+  padding: 0.5%;
+}
 
-  .second {
-    margin-left: 3%;
-  }
+.nav,
+#TNW {
+  display: none;
+}
+
+.righttop {
+  background: url(images/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  align-items: flex-end;
+}
+
+.rightbottom {
+  background: url(images/img3.png);
+  margin-top: 1%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.righttop p,
+.firstp {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 3%;
+}
+
+.smallimg a {
+  color: white;
+}
+
+.left-navbar {
+  display: none;
+}
+
+.right-nav img,
+.right-nav button {
+  display: none;
+}
+
+.navbar,
+.announcement,
+.section1,
+.grid-divs,
+.section3,
+.title,
+.section4 {
+  display: block;
+  padding: 0;
+}
+
+.nav-img {
+  display: inline-block;
+}
+
+.bigimgtop div {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  margin: 0 auto;
+  position: relative;
+}
+
+.ftr2 div {
+  border-radius: 0;
+  width: 8%;
+  position: absolute;
+  bottom: 0;
+  right: 0.5%;
+}
+
+.link a {
+  font-size: 20px;
+}
+
+.bigimg,
+.righttop,
+.rightbottom {
+  height: 25vh;
+  margin: 1%;
+}
+
+.title h1 {
+  font-size: 25px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.mobile {
+  display: flex;
+}
+
+.mobile img {
+  width: 25%;
+  height: 45%;
+}
+
+.second {
+  margin-left: 3%;
 }
 
 /* tablets */
@@ -161,6 +284,10 @@ a {
   .alignment {
     width: 90%;
     margin: 0 auto;
+  }
+
+  #hamburger {
+    display: none;
   }
 
   .title {
@@ -231,15 +358,12 @@ a {
     padding: 10px;
   }
 
+  /* #hamburger {
+    display: none;
+  } */
+
   .links a {
     padding: 1.5%;
-  }
-
-  .announcement a {
-    display: inline-block;
-    margin-left: 1%;
-    color: black;
-    padding: 5px;
   }
 
   .section1 a {
@@ -331,10 +455,6 @@ a {
     height: 40px;
   }
 
-  .announcement {
-    background-color: #fd3;
-  }
-
   .sticky {
     position: sticky;
     top: 0;
@@ -348,36 +468,6 @@ a {
     gap: 5px;
     color: white;
     margin: 0.7%;
-  }
-
-  .sectionflex {
-    display: flex;
-  }
-
-  .bigimg {
-    position: relative;
-    height: 100%;
-    background: linear-gradient(
-      165deg,
-      rgb(248, 7, 7) 25%,
-      rgba(45, 43, 43, 1) 60%,
-      rgba(0, 0, 0, 1) 97%
-    );
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 2;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: url(images/img1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.1;
   }
 
   .bigimg h1 {
@@ -396,46 +486,6 @@ a {
 
   .link {
     justify-self: flex-end;
-  }
-
-  .righttop {
-    background: url(images/img2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    align-items: flex-end;
-  }
-
-  .rightbottom {
-    background: url(images/img3.png);
-    margin-top: 1%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .righttop p,
-  .rightbottom p {
-    font-size: 25px;
-    font-weight: bolder;
-    padding: 3%;
-  }
-
-  .link p,
-  .link i {
-    font-size: 15px;
-    color: grey;
-    padding: 0.5%;
-  }
-
-  .white p,
-  .smallimg i {
-    color: white;
-    font-size: 15px;
-    padding: 0.5%;
   }
 
   /* section2 styles */
@@ -603,5 +653,3 @@ a {
     margin-top: -4%;
   }
 }
-
-/* phones */
