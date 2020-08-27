@@ -14,7 +14,7 @@ This is a project to demonstrate the exisiting knowledge of HTML and CSS. It is 
 
 <i>Built With HTML5, CSS3, GIT, and VSCODE</i>
 
-<!-- Live Demo : https://heatmap-smashing.netlify.app/ -->
+Live Demo : https://next-web-clone.netlify.app/
 
 <h1>Getting Started</h1>
 
@@ -31,13 +31,13 @@ Prerequisites Text editor, Github profile and Git.
 
 <h2>Authors</h2>
 
-👤 Author1
+👤 NTWALI Heritier
 
 - Github: [@githubhandle](https://github.com/NtwaliHeritier)
 - Twitter: [@twitterhandle](https://twitter.com/NtwaliHeritier)
 - Linkedin: [linkedin](https://linkedin.com/in/ntwali-heritier-9950001a2)
 
-👤 Author2
+👤 ABHIGYAN Mahanta
 
 - Github: @Abhigyan001
 - Linkedin: https://www.linkedin.com/in/abhigyan-mahanta-b49799145/
