@@ -89,6 +89,10 @@ nav a,
   color: white;
 }
 
+.div2 a {
+  color: black;
+}
+
 .links2 a {
   padding: 1%;
   font-size: 12px;
@@ -318,10 +322,6 @@ nav a,
   background-color: #ffebe8;
   text-indent: 40%;
   padding: 3%;
-}
-
-.div2 a {
-  color: black;
 }
 
 .div2 p {
