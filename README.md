@@ -31,13 +31,13 @@ Prerequisites Text editor, Github profile and Git.
 
 <h2>Authors</h2>
 
-👤 Author1
+👤 NTWALI Heritier
 
 - Github: [@githubhandle](https://github.com/NtwaliHeritier)
 - Twitter: [@twitterhandle](https://twitter.com/NtwaliHeritier)
 - Linkedin: [linkedin](https://linkedin.com/in/ntwali-heritier-9950001a2)
 
-👤 Author2
+👤 ABHIGYAN Mahanta
 
 - Github: @Abhigyan001
 - Linkedin: https://www.linkedin.com/in/abhigyan-mahanta-b49799145/
