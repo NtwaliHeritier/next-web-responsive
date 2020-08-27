@@ -13,6 +13,12 @@ ul {
   list-style: none;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .sectionflex {
   display: flex;
 }
@@ -106,29 +112,30 @@ body {
 }
 
 .overlay {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: url(images/img1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-}
-
-.bigimg {
-  position: relative;
-  height: 100%;
   background: linear-gradient(
     165deg,
     rgb(248, 7, 7) 25%,
     rgba(45, 43, 43, 1) 60%,
     rgba(0, 0, 0, 1) 97%
   );
+
+  opacity: 0.1;
+  display: none;
+}
+
+.bigimg {
+  /* position: relative; */
+  height: 100%;
+  background: url(images/img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 2;
 }
 
 .link {
@@ -250,6 +257,8 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  z-index: 2;
+  background-color: white;
 }
 
 .majordiv {
@@ -292,7 +301,7 @@ body {
   padding: 1%;
 }
 
-.div1 p{
+.div1 p {
   text-indent: 25%;
 }
 
@@ -387,6 +396,144 @@ footer {
   margin-left: 3%;
 }
 
+.section4 li a {
+  color: rgb(116, 110, 110);
+}
+
+/* section4 styles */
+
+.section4 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.grid-background {
+  height: 20rem;
+  background-image: url(./images/apple.png);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2%;
+  color: white;
+}
+
+.grid-flex {
+  background-color: #ffebe8;
+  padding-left: 2%;
+  margin-top: 1%;
+  justify-content: space-between;
+}
+
+.grid-flex img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-img {
+  width: 50%;
+}
+
+.section4 li {
+  border-bottom: 1px solid lightgray;
+  padding: 2% 0 2%;
+  list-style: none;
+}
+
+.section4 li::before {
+  content: "\2022";
+  color: #f42;
+  font-weight: bolder;
+}
+
+/* Section5 style */
+
+.section5 {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13%;
+}
+
+.section5 a {
+  font-size: 16px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  font-size: 10px;
+}
+
+.second-p {
+  padding: 2% 0;
+}
+
+.black {
+  color: black;
+  font-size: 15px;
+}
+
+/* Footer Styles */
+
+footer {
+  margin-top: 15%;
+}
+
+.ftr1 {
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #131313;
+  height: 170px;
+}
+
+.links a {
+  padding: 3px;
+  color: #fff;
+  background-color: rgb(51, 48, 48);
+  border-radius: 50%;
+  padding-top: 4%;
+  margin-right: 1%;
+}
+
+.links2 a {
+  font-size: 12px;
+  color: grey;
+}
+
+.links2 {
+  margin-top: -5%;
+}
+
+.ftr1 i {
+  transform: scale(0.7);
+}
+
+.ftr2 {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  background-color: black;
+  padding: 4%;
+  height: 140px;
+}
+
+.ftr2 p {
+  width: 50%;
+  margin: 4% auto;
+  line-height: 1.5;
+}
+
+.ftr2 a {
+  color: white;
+}
+
+.ftr2 div {
+  background-color: #146ff8;
+  float: right;
+  padding: 2%;
+  margin-top: -4%;
+}
+
 /* tablets */
 
 @media screen and (min-width: 768px) {
@@ -476,10 +623,6 @@ footer {
     display: none;
   } */
 
-  .links a {
-    padding: 1.5%;
-  }
-
   .section1 a {
     color: white;
   }
@@ -524,10 +667,6 @@ footer {
     font-weight: 900;
   }
 
-  .section4 li a {
-    color: rgb(116, 110, 110);
-  }
-
   .section5 p a {
     font-size: 20px;
   }
@@ -567,12 +706,6 @@ footer {
   .navbar img {
     width: 100px;
     height: 40px;
-  }
-
-  .sticky {
-    position: sticky;
-    top: 0;
-    left: 0;
   }
 
   /* section1 styles */
@@ -625,10 +758,6 @@ footer {
     color: #f42;
   }
 
-  .second-p {
-    padding: 2% 0;
-  }
-
   /* Section 3 div design */
 
   .majordiv {
@@ -673,90 +802,5 @@ footer {
 
   .lastp {
     padding-bottom: 5%;
-  }
-
-  /* section4 styles */
-
-  .section4 {
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-
-  .grid-background {
-    height: 20rem;
-    background-image: url(./images/apple.png);
-    background-position: center;
-    background-size: cover;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 2%;
-    color: white;
-  }
-
-  .grid-flex {
-    background-color: #ffebe8;
-    padding-left: 2%;
-    margin-top: 1%;
-    justify-content: space-between;
-  }
-
-  .grid-flex img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .flex-img {
-    width: 50%;
-  }
-
-  .section4 li {
-    border-bottom: 1px solid lightgray;
-    padding: 2% 0 2%;
-    list-style: none;
-  }
-
-  .section4 li::before {
-    content: "\2022";
-    color: #f42;
-    font-weight: bolder;
-  }
-
-  /* Section5 style */
-
-  .section5 {
-    margin: 7% auto;
-  }
-
-  .second-p .strikethrough {
-    text-decoration: line-through;
-    font-size: 15px;
-  }
-
-  /* Footer Styles */
-
-  .ftr1 {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #131313;
-    height: 170px;
-  }
-
-  .links {
-    margin-bottom: 2%;
-  }
-
-  .ftr2 {
-    color: white;
-    background-color: black;
-    padding: 4%;
-  }
-
-  .ftr2 div {
-    background-color: #146ff8;
-    float: right;
-    padding: 2%;
-    border-radius: 50%;
-    margin-top: -4%;
   }
 }
