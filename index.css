@@ -439,7 +439,7 @@ nav a,
 
 /* tablets */
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .right-nav img,
   .right-nav button {
     display: none;
@@ -519,7 +519,8 @@ nav a,
     display: block;
   }
 
-  .nav {
+  .nav,
+  #TNW {
     display: none;
   }
 
@@ -567,5 +568,40 @@ nav a,
     position: absolute;
     bottom: 0;
     right: 0.5%;
+  }
+
+  .link a {
+    font-size: 20px;
+  }
+
+  .bigimg,
+  .righttop,
+  .rightbottom {
+    height: 25vh;
+    margin: 1%;
+  }
+
+  .nav-img {
+    margin-top: 1%;
+  }
+
+  .title h1 {
+    font-size: 25px;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .mobile img {
+    width: 25%;
+    height: 45%;
+  }
+  .second {
+    margin-left: 3%;
   }
 }
