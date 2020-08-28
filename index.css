@@ -780,27 +780,33 @@ footer {
   .nav-img {
     display: none;
   }
+
   .red {
     color: #ff4422;
   }
+
   .grey {
     color: #b6b6b6;
   }
+
   .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1%;
   }
+
   .grid2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1%;
   }
+
   .alignment {
     width: 95%;
     margin: 0 auto;
@@ -897,13 +903,16 @@ footer {
     font-size: 10px;
     font-weight: 800;
   }
+
   .navbar img {
     width: 100px;
     height: 30px;
   }
+
   .announcement {
     background-color: #ffdd33;
   }
+
   .announcement a {
     display: inline-block;
     margin-left: 1%;
@@ -929,7 +938,7 @@ footer {
   }
 
   .section1 {
-    margin: 0;
+    margin-bottom: 12%;
   }
 
   .sectionflex {
@@ -1028,7 +1037,7 @@ footer {
 
   .righttop,
   .rightbottom {
-    height: 13.5rem;
+    height: 12.4rem;
     background-position: center;
   }
 
@@ -1045,50 +1054,67 @@ footer {
   }
 
   /* section2 styles */
+
   .title {
     color: #ff4422;
     font-size: 20px;
     margin-top: 2%;
     margin-bottom: 2%;
   }
+
   .title h1 {
     display: inline-block;
   }
+
   .grid-divs {
     grid-row-gap: 3%;
   }
+
   .grid-divs img {
     width: 100%;
     cursor: pointer;
   }
+
   .grid-divs div {
     margin-bottom: 5%;
   }
+
   .grid-divs a {
     color: black;
     font-size: 15px;
     font-weight: 900;
   }
+
   .grid-divs a:hover {
     color: #ff4422;
   }
+
   .second-p {
     padding: 2% 0;
+    font-size: 14px;
   }
+
+  .second-p a {
+    font-weight: normal;
+  }
+
   .second-p,
   .second-p a {
     color: #b6b6b6;
   }
+
   /* Section 3 div design */
   .majordiv {
     position: relative;
   }
+
   .majordiv h1 {
     text-align: center;
     background-color: #ff4422;
     color: white;
     padding: 1%;
   }
+
   .div1 {
     background-color: #ffebe8;
     text-indent: 40%;
@@ -1099,11 +1125,13 @@ footer {
     font-weight: 900;
     font-size: 20px;
   }
+
   .div2 {
     background-color: #fffaf8;
     text-indent: 10%;
     padding-bottom: 10%;
   }
+
   .img img {
     position: absolute;
     width: 20%;
@@ -1111,18 +1139,27 @@ footer {
     top: 3%;
     left: 5%;
   }
+
   .div2 p {
     padding: 2%;
   }
+
   .lastp {
     text-indent: 10%;
     padding-bottom: 5%;
   }
+
+  .hidden {
+    display: inline-block;
+  }
+
   /* section4 styles */
+
   .section4 {
     margin-top: 2%;
     margin-bottom: 2%;
   }
+
   .grid-background {
     height: 20rem;
     background-image: url(./images/apple.png);
@@ -1133,46 +1170,63 @@ footer {
     padding: 2%;
     color: white;
   }
+
   .grid-flex {
     background-color: #ffebe8;
     padding-left: 2%;
     margin-top: 1%;
   }
+
   .grid-flex img {
     width: 100%;
     height: 100%;
   }
+
   .flex-img {
     width: 50%;
   }
+
   .grid-flex {
     justify-content: space-between;
   }
+
   .section4 li {
     border-bottom: 1px solid lightgray;
     padding: 2% 0 2%;
     list-style: none;
   }
+
   .section4 li::before {
     content: "\2022";
     color: #ff4422;
     font-weight: bolder;
   }
+
   .section4 li a {
     color: rgb(116, 110, 110);
   }
+
   /* Section5 style */
+
   .section5 {
-    margin: 7% auto;
+    margin-top: 10%;
   }
+
   .section5 p a {
     font-size: 20px;
   }
+
   .second-p .strikethrough {
     text-decoration: line-through;
     font-size: 15px;
   }
+
   /* Footer Styles */
+
+  footer {
+    margin-top: 6%;
+  }
+
   .ftr1 {
     flex-direction: column;
     justify-content: center;
@@ -1180,16 +1234,21 @@ footer {
     background-color: #131313;
     height: 170px;
   }
+
   .links {
-    margin-bottom: 2%;
+    margin-bottom: 7%;
   }
+
   .links a {
-    padding: 1.5%;
+    padding-top: 1.5%;
+    margin-right: 2%;
   }
+
   .links i,
   .links2 a {
     color: white;
   }
+
   .links2 a {
     padding: 1%;
     font-size: 12px;
@@ -1205,9 +1264,17 @@ footer {
   .ftr2 div {
     background-color: #146ff8;
     float: right;
-    padding: 2%;
     border-radius: 50%;
-    margin-top: -4%;
+    padding: 2%;
+    width: 7px;
+    height: 1px;
+    margin: 1%;
+  }
+
+  .ftr2 i {
+    position: absolute;
+    top: 3%;
+    right: 15%;
   }
 
   .ftr2 a {
