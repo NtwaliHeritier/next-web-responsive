@@ -574,7 +574,8 @@ footer {
   }
 
   .sticky {
-    position: static;
+    position: fixed;
+    top: 0;
   }
 
   .left-navbar,
@@ -635,7 +636,7 @@ footer {
   .search1 {
     border-right: none;
     position: absolute;
-    top: 3.2%;
+    bottom: 35px;
     right: 1%;
   }
 
