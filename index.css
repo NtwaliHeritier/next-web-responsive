@@ -493,6 +493,12 @@ footer {
   font-size: 15px;
 }
 
+.img img {
+  height: 50px;
+  width: 40px;
+  margin-top: -3px;
+}
+
 /* Footer Styles */
 
 footer {
@@ -558,7 +564,6 @@ footer {
 /* tablets */
 
 @media screen and (min-width: 768px) {
-
   .alignment {
     width: 95%;
     margin: 0 auto;
@@ -633,8 +638,13 @@ footer {
     top: 3.2%;
     right: 1%;
   }
+
   .announcement {
     text-align: center;
+  }
+
+  .announcement a {
+    padding: 1%;
   }
 
   .grid {
@@ -690,7 +700,7 @@ footer {
     grid-template-columns: 2fr 1fr;
     gap: 3px;
     color: white;
-    margin: 0.7%;
+    margin: 0;
     height: 50vh;
   }
 
@@ -722,10 +732,46 @@ footer {
   .link {
     justify-self: flex-end;
   }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1% 3%;
+  }
+
+  .section5 {
+    margin-top: 26%;
+  }
+
+  .grid-background h3 {
+    font-size: 15px;
+  }
+
+  .grid-background p {
+    font-size: 22px;
+  }
+
+  .grid-background .second-p {
+    font-size: 12px;
+  }
+
+  .ftr2 {
+    height: 100px;
+  }
+
+  .ftr2 p {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    padding-top: 2%;
+  }
+
+  .links2 a {
+    margin: 3px;
+  }
 }
-
-
-
 
 @media screen and (min-width: 1024px) {
   /* nav styles */
