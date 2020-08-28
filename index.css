@@ -85,7 +85,7 @@ body {
 .section1 {
   margin-top: 70px;
   margin-bottom: 10%;
-  height: 90vh;
+  height: 95vh;
 }
 
 #hamburger {
@@ -138,7 +138,7 @@ body {
 
 .bigimg {
   position: relative;
-  height: 300px;
+  height: 30vh;
   background: url(images/img1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,7 +147,8 @@ body {
 }
 
 .smallimg {
-  height: 400px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .link {
@@ -160,16 +161,16 @@ body {
   width: 40%;
 }
 
+.details {
+  color: white;
+}
+
 .link p,
 .link i,
 .details {
   font-size: 15px;
   color: grey;
   padding: 0.5%;
-}
-
-.details {
-  color: white;
 }
 
 .nav-img img {
@@ -192,7 +193,7 @@ body {
   background: url(images/img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 30vh;
   align-items: flex-end;
 }
 
@@ -202,7 +203,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
+  height: 30vh;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -680,6 +681,12 @@ footer {
     width: 100%;
   }
 
+  .smallimg {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
   #div5 {
     margin-bottom: 2%;
   }
@@ -702,17 +709,20 @@ footer {
     gap: 3px;
     color: white;
     margin: 0;
-    height: 50vh;
+    height: 80vh;
+    background-color: red;
   }
 
   .bigimg {
-    height: 30rem;
+    height: inherit;
     background-position: center;
+    padding: 0;
+    margin: 0;
   }
 
   .righttop,
   .rightbottom {
-    height: 15rem;
+    max-height: 39.2vh;
     background-position: center;
   }
 
@@ -808,7 +818,7 @@ footer {
   }
 
   .alignment {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
   }
   a {
@@ -874,19 +884,9 @@ footer {
     margin-left: 200px;
   }
 
-  .announcement {
-    text-align: left;
-    margin-top: 0.5px;
-  }
-
   .left-navbar {
-    padding: 1%;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
-  }
-
-  .navbar {
-    padding: 0 1%;
   }
 
   .navbar i,
@@ -902,6 +902,7 @@ footer {
     border-radius: 5px;
     font-size: 10px;
     font-weight: 800;
+    margin-top: -4px;
   }
 
   .navbar img {
@@ -911,6 +912,8 @@ footer {
 
   .announcement {
     background-color: #ffdd33;
+    text-align: left;
+    margin-top: -6px;
   }
 
   .announcement a {
@@ -931,14 +934,10 @@ footer {
     grid-template-columns: 2fr 1fr;
     gap: 5px;
     color: white;
-    margin: 0.7%;
+    margin: 0.5% 0 12%;
   }
   .section1 a {
     color: white;
-  }
-
-  .section1 {
-    margin-bottom: 12%;
   }
 
   .sectionflex {
@@ -947,7 +946,7 @@ footer {
 
   .bigimg {
     position: relative;
-    height: 100%;
+    height: inherit;
     background: linear-gradient(
       165deg,
       rgb(248, 7, 7) 25%,
@@ -957,6 +956,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     z-index: 2;
+    margin: 0;
   }
 
   .overlay {
@@ -999,19 +999,20 @@ footer {
     background: url(images/img2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 39.5vh;
     align-items: flex-end;
+    margin: 0;
   }
 
   .rightbottom {
     background: url(images/img3.png);
-    margin-top: 1%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 39.5vh;
     flex-direction: column;
     justify-content: flex-end;
+    margin: 0;
   }
 
   .righttop p,
@@ -1037,23 +1038,20 @@ footer {
 
   .righttop,
   .rightbottom {
-    height: 12.4rem;
     background-position: center;
   }
 
-  .righttop {
-    margin-top: 10px;
-  }
-
-  .rightbottom {
-    margin-top: 4px;
-  }
-
   .smallimg {
-    margin-left: -12px;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   /* section2 styles */
+
+  .section2 {
+    margin-top: -5%;
+  }
 
   .title {
     color: #ff4422;
@@ -1109,10 +1107,11 @@ footer {
   }
 
   .majordiv h1 {
-    text-align: center;
+    text-align: left;
     background-color: #ff4422;
     color: white;
     padding: 1%;
+    padding-left: 20px;
   }
 
   .div1 {
@@ -1128,8 +1127,22 @@ footer {
 
   .div2 {
     background-color: #fffaf8;
-    text-indent: 10%;
     padding-bottom: 10%;
+  }
+
+  .ul li {
+    display: inline;
+    padding: 0 4px;
+  }
+
+  .ul li:nth-child(2) {
+    border-left: 1px solid #ff4422;
+    border-right: 1px solid #ff4422;
+    padding: 0 8px;
+  }
+
+  .ul li a {
+    font-size: 17px;
   }
 
   .img img {
@@ -1145,7 +1158,6 @@ footer {
   }
 
   .lastp {
-    text-indent: 10%;
     padding-bottom: 5%;
   }
 
@@ -1242,6 +1254,12 @@ footer {
   .links a {
     padding-top: 1.5%;
     margin-right: 2%;
+  }
+
+  .details p, .details i{
+    font-size: 15px;
+    color: white;
+    padding: 0.5%;
   }
 
   .links i,
