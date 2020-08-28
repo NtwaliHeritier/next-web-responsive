@@ -14,7 +14,7 @@ ul {
 }
 
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 999;
@@ -83,7 +83,6 @@ body {
 }
 
 .section1 {
-  margin-top: 70px;
   margin-bottom: 10%;
   height: 95vh;
 }
@@ -103,7 +102,8 @@ body {
 }
 
 .search {
-  padding: 10px 15px;
+  padding: 12% 15px;
+  margin-top: -8px;
 }
 
 .announcement {
@@ -161,13 +161,14 @@ body {
   width: 40%;
 }
 
-.details {
+.details p, .details i{
+  font-size: 15px;
   color: white;
+  padding: 0.5%;
 }
 
 .link p,
-.link i,
-.details {
+.link i {
   font-size: 15px;
   color: grey;
   padding: 0.5%;
@@ -570,12 +571,16 @@ footer {
     margin: 0 auto;
   }
 
+  .sectionflex {
+    display: flex;
+  }
+
   #hamburger {
     display: none;
   }
 
   .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
   }
 
@@ -649,6 +654,12 @@ footer {
     padding: 1%;
   }
 
+  .details p, .details i{
+    font-size: 15px;
+    color: white;
+    padding: 0.5%;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -682,9 +693,9 @@ footer {
   }
 
   .smallimg {
-    height: 100%;
-    padding: 0;
-    margin: 0;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   #div5 {
@@ -708,9 +719,8 @@ footer {
     grid-template-columns: 2fr 1fr;
     gap: 3px;
     color: white;
-    margin: 0;
+    margin: 0.5% 0 0;
     height: 80vh;
-    background-color: red;
   }
 
   .bigimg {
@@ -720,10 +730,10 @@ footer {
     margin: 0;
   }
 
-  .righttop,
-  .rightbottom {
-    max-height: 39.2vh;
-    background-position: center;
+  .rightbottom,
+  .righttop{
+    height: 39.7vh;
+    margin: 0;
   }
 
   .bigimg h1 {
@@ -752,6 +762,11 @@ footer {
 
   .section5 {
     margin-top: 26%;
+  }
+
+  .search {
+    padding: 1.6% 15px;
+    margin-top: -1%;
   }
 
   .grid-background h3 {
@@ -874,19 +889,19 @@ footer {
     padding-right: 10px;
   }
 
-  .search {
-    margin-top: -1px;
-    padding: 2%;
-  }
-
   .search1 {
     position: static;
-    margin-left: 200px;
+    padding: 6.5% 15px;
+    margin-top: -6px;
   }
 
   .left-navbar {
     padding: 0;
     margin: 0;
+  }
+
+  .right-nav {
+    max-width: 20%;
   }
 
   .navbar i,
@@ -1034,11 +1049,6 @@ footer {
     color: white;
     font-size: 15px;
     padding: 0.5%;
-  }
-
-  .righttop,
-  .rightbottom {
-    background-position: center;
   }
 
   .smallimg {
