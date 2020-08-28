@@ -777,12 +777,9 @@ footer {
 @media screen and (min-width: 1024px) {
   /* nav styles */
 
-  body {
-    font-family: Helvetica, Arial, sans-serif;
-    overflow-x: hidden;
-    position: relative;
+  .nav-img {
+    display: none;
   }
-  
   .red {
     color: #ff4422;
   }
@@ -805,7 +802,7 @@ footer {
     gap: 1%;
   }
   .alignment {
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
   }
   a {
@@ -816,6 +813,7 @@ footer {
     width: 100vw;
   }
   .nav {
+    margin-left: 0;
     height: 8%;
     padding: 0.5%;
     background-color: black;
@@ -827,18 +825,69 @@ footer {
   .left-nav a:nth-child(1) {
     color: white;
   }
-  
+
+  .left-nav {
+    margin: 0;
+  }
+
   .right-nav {
     margin-right: 2%;
   }
-  
-  .navbar {
-    padding: 0.5% 1%;
+
+  .right-nav img,
+  .right-nav button {
+    display: inline-block;
+    margin-right: 10px;
   }
+
+  .navbar .right-nav img {
+    height: 40px;
+    width: 120px;
+    padding: 0;
+    margin-top: -1px;
+  }
+
+  .right-nav button {
+    height: 30px;
+    width: 150px;
+    margin-top: 4px;
+    margin-right: -20px;
+  }
+
+  .right-nav a {
+    padding-right: 10px;
+  }
+
+  .search {
+    margin-top: -1px;
+    padding: 2%;
+  }
+
+  .search1 {
+    position: static;
+    margin-left: 200px;
+  }
+
+  .announcement {
+    text-align: left;
+    margin-top: 0.5px;
+  }
+
+  .left-navbar {
+    padding: 1%;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .navbar {
+    padding: 0 1%;
+  }
+
   .navbar i,
   .navbar img {
-    padding: 0 10px;
+    padding: 1% 4%;
   }
+
   .navbar button {
     padding: 5px;
     background-color: #00cccc;
@@ -850,7 +899,7 @@ footer {
   }
   .navbar img {
     width: 100px;
-    height: 40px;
+    height: 30px;
   }
   .announcement {
     background-color: #ffdd33;
@@ -861,12 +910,12 @@ footer {
     color: black;
     padding: 5px;
   }
-  
+
   .sticky {
     position: sticky;
     top: 0;
   }
-  
+
   /* section1 styles */
   .section1 {
     display: grid;
@@ -878,9 +927,15 @@ footer {
   .section1 a {
     color: white;
   }
+
+  .section1 {
+    margin: 0;
+  }
+
   .sectionflex {
     display: flex;
   }
+
   .bigimg {
     position: relative;
     height: 100%;
@@ -894,6 +949,7 @@ footer {
     justify-content: space-between;
     z-index: 2;
   }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -905,25 +961,31 @@ footer {
     background-repeat: no-repeat;
     opacity: 10%;
   }
+
   .bigimg h1 {
     font-size: 7rem;
     padding: 0.5% 1%;
   }
+
   .bigimgtop {
     align-items: flex-start;
     justify-content: space-between;
   }
+
   .bigimgtop p {
     padding: 1%;
   }
+
   .link {
     justify-self: flex-end;
   }
+
   .link a {
     font-size: 40px;
     color: white;
     width: 40%;
   }
+
   .righttop {
     background: url(images/img2.jpg);
     background-repeat: no-repeat;
@@ -931,6 +993,7 @@ footer {
     height: 200px;
     align-items: flex-end;
   }
+
   .rightbottom {
     background: url(images/img3.png);
     margin-top: 1%;
@@ -941,24 +1004,46 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
   }
+
   .righttop p,
   .rightbottom p {
     font-size: 25px;
     font-weight: bolder;
     padding: 3%;
   }
+
   .link p,
   .link i {
     font-size: 15px;
     color: grey;
     padding: 0.5%;
   }
+
   .white p,
   .smallimg i {
     color: white;
     font-size: 15px;
     padding: 0.5%;
   }
+
+  .righttop,
+  .rightbottom {
+    height: 13.5rem;
+    background-position: center;
+  }
+
+  .righttop {
+    margin-top: 10px;
+  }
+
+  .rightbottom {
+    margin-top: 4px;
+  }
+
+  .smallimg {
+    margin-left: -12px;
+  }
+
   /* section2 styles */
   .title {
     color: #ff4422;
@@ -1110,13 +1195,13 @@ footer {
     font-size: 12px;
     color: lightgrey;
   }
-  
+
   .ftr2 {
     color: white;
     background-color: black;
     padding: 4%;
   }
-  
+
   .ftr2 div {
     background-color: #146ff8;
     float: right;
@@ -1124,11 +1209,11 @@ footer {
     border-radius: 50%;
     margin-top: -4%;
   }
-  
+
   .ftr2 a {
     color: white;
   }
-  
+
   .ftr2 p {
     text-align: center;
   }
