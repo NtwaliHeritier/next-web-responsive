@@ -784,6 +784,18 @@ footer {
     padding: 0.5% 1%;
   }
 
+  .title h1 {
+    display: inline-block;
+  }
+
+  .majordiv h1 {
+    text-align: left;
+    background-color: #f42;
+    color: white;
+    padding: 1%;
+    padding-left: 20px;
+  }
+
   #TNW h1 {
     font-size: 14em;
   }
@@ -826,6 +838,36 @@ footer {
   .navbar i,
   .navbar img {
     padding: 1% 4%;
+  }
+
+  .righttop p,
+  .rightbottom p {
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 3%;
+  }
+
+  .link p,
+  .link i {
+    font-size: 15px;
+    color: grey;
+    padding: 0.5%;
+  }
+
+  .white p,
+  .smallimg i {
+    color: white;
+    font-size: 15px;
+    padding: 0.5%;
+  }
+
+  .div2 p {
+    padding: 2%;
+  }
+
+  .ftr2 div i {
+    padding-top: 20%;
+    padding-right: 8%;
   }
 
   .rightbottom .details p,
@@ -1099,27 +1141,6 @@ footer {
     margin-left: -10px;
   }
 
-  .righttop p,
-  .rightbottom p {
-    font-size: 25px;
-    font-weight: bolder;
-    padding: 3%;
-  }
-
-  .link p,
-  .link i {
-    font-size: 15px;
-    color: grey;
-    padding: 0.5%;
-  }
-
-  .white p,
-  .smallimg i {
-    color: white;
-    font-size: 15px;
-    padding: 0.5%;
-  }
-
   .smallimg {
     flex-direction: column;
     justify-content: flex-start;
@@ -1134,10 +1155,6 @@ footer {
   .title {
     margin-top: 2%;
     margin-bottom: 2%;
-  }
-
-  .title h1 {
-    display: inline-block;
   }
 
   .grid-divs {
@@ -1158,22 +1175,10 @@ footer {
     position: relative;
   }
 
-  .majordiv h1 {
-    text-align: left;
-    background-color: #f42;
-    color: white;
-    padding: 1%;
-    padding-left: 20px;
-  }
-
   .div1 {
     background-color: #ffebe8;
     text-indent: 40%;
     padding: 3%;
-  }
-
-  .div2 p {
-    padding: 2%;
   }
 
   .div1 p:nth-child(1) {
@@ -1282,10 +1287,5 @@ footer {
     width: 7px;
     height: 1px;
     margin: 1%;
-  }
-
-  .ftr2 div i {
-    padding-top: 20%;
-    padding-right: 8%;
   }
 }
