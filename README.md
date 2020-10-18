@@ -40,7 +40,7 @@ Prerequisites Text editor, Github profile and Git.
 👤 ABHIGYAN Mahanta
 
 - Github: @Abhigyan001
-- Linkedin: https://www.linkedin.com/in/abhigyan-mahanta-b49799145/
+- Linkedin: https://www.linkedin.com/in/abhigyan001/
 
 🤝 Contributing Contributions, issues and feature requests are welcome!
 
